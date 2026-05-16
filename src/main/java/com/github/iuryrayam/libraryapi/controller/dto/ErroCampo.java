@@ -1,4 +1,4 @@
 package com.github.iuryrayam.libraryapi.controller.dto;
 
-public record ErroCampo() {
+public record ErroCampo(String nome, String erro) {
 }
