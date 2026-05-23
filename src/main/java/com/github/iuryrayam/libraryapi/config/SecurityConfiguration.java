@@ -16,8 +16,10 @@ public class SecurityConfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         return http
                 .csrf(AbstractHttpConfigurer::disable)
-//                .httpBasic(Customizer.withDefaults())
-                .formLogin(Customizer.withDefaults())
+                .httpBasic(Customizer.withDefaults())
+                .formLogin(configure -> {
+                    configure.loginPage("/login").permitAll();
+                })
                 .authorizeHttpRequests(authorize ->{
                     authorize.anyRequest().authenticated();
                 })
