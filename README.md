@@ -25,7 +25,7 @@ A **Library API** é uma aplicação completa para gerenciamento de biblioteca q
 
 ### Core
 - **Java 21** - Linguagem de programação
-- **Spring Boot 3.3.4** - Framework web e microserviços
+- **Spring Boot 3.3.4** - Framework web
 - **Maven 3.8.1** - Gerenciador de dependências
 
 ### Backend
